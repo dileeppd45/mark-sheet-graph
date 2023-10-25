@@ -1,0 +1,28 @@
+
+
+                    <center><br><br>
+
+
+
+                          <center> <h2 class="card-title">View marksheets</h2></center><br>
+                      <table class="table">
+
+
+                          <tr>
+                              <th><h5>No.</h5></th>
+                              <th><h5>Marksheets</h5></th>
+                              <th></th>
+                          </tr>
+
+                        {% for i in data %}
+                          <tr>
+                              <td><h5>{{ forloop.counter }}</h5></td>
+                              <td><h5>Mark sheet{{i}}</h5></td>
+<!--                              <td><a href="../add_company/{{i.0}}"><div class="badge badge-outline-warning">Add Company</div></a></td>-->
+                              <td><h5><a href="../view_pychart/{{i}}">View pychart</a></h5></td>
+                          </tr>
+                        {% endfor %}
+                      </table>
+
+</center><br><br>
+
